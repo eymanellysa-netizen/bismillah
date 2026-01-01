@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Family</title>
+
+<style>
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: soft pink;
+    min-height:100vh;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 70px;
+    letter-spacing:2px;
+}
+
+.logo{
+    font-weight:bold;
+    color:purple;
+    font-size:18px;
+}
+
+.menu a{
+    margin-left:30px;
+    text-decoration:none;
+    color:purple;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+.page-title{
+    text-align:center;
+    font-size:60px;
+    margin:60px 0 20px;
+}
+
+.page-subtitle{
+    text-align:center;
+    font-size:22px;
+    opacity:0.8;
+    margin-bottom:60px;
+}
+
+.family-grid{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    padding:0 60px 80px;
+}
+
+.family-card{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+.family-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.family-card h3{
+    font-size:26px;
+    margin-bottom:10px;
+    color:purple;
+}
+
+.family-card p{
+    font-size:18px;
+    line-height:1.7;
+    opacity:0.85;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+@media (max-width:1000px){
+    .family-grid{
+        grid-template-columns:1fr;
+        padding:0 30px 60px;
+    }
+
+    .page-title{
+        font-size:55px;
+    }
+
+    .family-card img{
+        height:280px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">ELYSA'S PAGE <3 </div>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="biodata.html">BIODATA</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+		<a href="video.html">VIDEO</a>
+    </div>
+</div>
+
+
+<h1 class="page-title">MY FAMILY</h1>
+<p class="page-subtitle">The people i love the most and keep support me no matter what<br> 
+                         My backbones ✨</p>
+
+
+<div class="family-grid">
+
+    <div class="family-card">
+        <img src="images/parents.jpg" alt="Father">
+        <h3>Dear Ayah ❤️ </h3>
+        <p>
+            My father is a hardworking and responsible person.
+            He is my biggest motivation and always encourages me
+            to do my best in everything I pursue.
+        </p>
+    </div>
+
+    <div class="family-card">
+        <img src="images/mak.jpg" alt="Mother">
+        <h3>Dear Mak ❤️️</h3>
+        <p>
+            My mother is caring, loving, and understanding.
+            She is my source of strength and guidance in life.
+        </p>
+    </div>
+
+    <div class="family-card">
+        <img src="images/tok.jpg" alt="Siblings">
+        <h3>Dear Tok ❤️ </h3>
+        <p>
+            My grandmother is so caring about me just like my mother did.
+			She have a positive aura and mindset.
+        </p>
+    </div>
+
+</div>
+
+
+<footer>
+    This website is developed by Nurul Eyman Elysa Binti Sha'ari (2023891894)
+</footer>
+
+</body>
+</html>

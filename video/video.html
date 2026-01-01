@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Video</title>
+
+<style>
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: soft pink;
+    min-height:100vh;
+}
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 70px;
+    letter-spacing:2px;
+}
+
+.logo{
+    font-weight:bold;
+    color:purple;
+    font-size:18px;
+}
+
+.menu a{
+    margin-left:30px;
+    text-decoration:none;
+    color:purple;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+
+.page-title{
+    text-align:center;
+    font-size:50px;
+    margin:60px 0 20px;
+}
+
+.page-subtitle{
+    text-align:center;
+    font-size:22px;
+    opacity:0.8;
+    margin-bottom:60px;
+}
+
+.video-container{
+    max-width:400px;
+    margin:0 auto 80px;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,0.2);
+    background:white;
+    padding:20px;
+}
+
+.video-container video{
+    width:100%;
+    height:auto;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+@media (max-width:1000px){
+    .page-title{
+        font-size:55px;
+    }
+
+    .video-container{
+        margin:0 10px 40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="navbar">
+    <div class="logo">ELYSA'S PAGE <3 </div>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="biodata.html">BIODATA</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="video.html">VIDEO</a>
+    </div>
+</div>
+
+<h1 class="page-title">BELOVED FAMILY</h1>
+<p class="page-subtitle">One of my favourite video with my family ❤️ </p>
+
+<div class="video-container">
+    <video controls>
+        <source src="images/video.mp4" type="video/mp4">
+   
+    </video>
+</div>
+
+
+<footer>
+    This website is developed by Nurul Eyman Elysa Binti Sha'ari (2023891894)
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<style>
+ {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: linear-gradient(to bottom right, #ffffff, #E0F3FF);
+    min-height: 100vh;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 70px;
+    letter-spacing:2px;
+}
+
+.logo{
+    font-weight:bold;
+    color:purple;
+    font-size:18px;
+}
+
+.menu a{
+    margin-left:30px;
+    text-decoration:none;
+    color:purple;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 70px;
+    position: relative;
+}
+
+.soft-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(29, 78, 128, 0.10);
+    filter: blur(2px);
+    z-index: -1;
+}
+
+#circle1 { width: 280px; height: 280px; top: 120px; left: -80px; }
+#circle2 { width: 320px; height: 320px; bottom: 50px; right: 100px; }
+
+.page-title {
+    text-align:center;
+    font-size:80px;
+    margin:60px 0 20px;
+}
+
+.page-subtitle {
+    text-align:center;
+    font-size:22px;
+    opacity:0.8;
+    margin-bottom:60px;
+}
+
+.education-grid, .experience-grid, .gallery-grid {
+    max-width:1500px;
+    margin:auto;
+    display:grid;
+    gap:40px;
+    padding:0 60px 80px;
+}
+
+.education-grid, .experience-grid { grid-template-columns: repeat(3, 1fr); }
+.gallery-grid { grid-template-columns: repeat(3, 1fr); }
+
+.education-card, .experience-card, .gallery-card {
+    background:white;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+    transition:0.3s;
+    text-align:center;
+}
+
+.education-card img, .experience-card img, .gallery-card img {
+    width:100%;
+    border-radius:20px;
+    margin-bottom:20px;
+    object-fit:cover;
+    transition:0.3s;
+}
+
+.gallery-card img:hover {
+    transform:scale(1.05);
+}
+
+.education-card img {
+    height:260px;
+    padding:15px;
+    background:#f8f8f8;
+    border:4px solid purple;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.experience-card img {
+    height:300px;
+}
+
+.experience-card:hover, .education-card:hover, .gallery-card:hover{
+    transform:translateY(-5px);
+}
+
+
+.education-number {
+    font-size:28px;
+    opacity:0.8;
+    margin-bottom:10px;
+    color: purple;
+}
+
+.education-card h3, .experience-card h2 {
+    font-size:20px;
+    color: purple;
+    margin-bottom:15px;
+}
+
+.experience-card ul, .education-card p, .gallery-card p {
+    font-size:14px;
+    line-height:1.6;
+    opacity:0.85;
+}
+
+.experience-card ul{
+    list-style:none;
+    text-align:center;
+}
+
+.experience-card li{
+    position:relative;
+    padding-left:18px;
+    margin-bottom:8px;
+}
+
+.experience-card li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:purple;
+    font-weight:bold;
+}
+
+
+.hero-text a, .education-card a {
+    display:inline-block;
+    padding:18px 50px;
+    font-size:22px;
+    border:3px solid purple;
+    border-radius:40px;
+    color:purple;
+    text-decoration:none;
+    letter-spacing:2px;
+    transition:0.3s;
+}
+
+.hero-text a:hover, .education-card a:hover{
+    background:purple;
+    color:white;
+}
+
+.video-container {
+    max-width:900px;
+    margin:0 auto 80px;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,0.2);
+    background:white;
+    padding:20px;
+}
+
+.video-container video {
+    width:100%;
+    height:auto;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+@media (max-width:1000px){
+    .education-grid, .experience-grid, .gallery-grid{
+        grid-template-columns:1fr;
+        padding:0 30px 60px;
+    }
+
+    .page-title{
+        font-size:55px;
+    }
+
+    .experience-card img{ height:260px; }
+    .education-card img{ height:200px; }
+    .gallery-card img{ height:280px; }
+}

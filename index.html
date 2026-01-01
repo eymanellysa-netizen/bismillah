@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elysa's Life</title>
+
+<style>
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right, #ffffff, #E0F3FF);
+    min-height:100vh;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 70px;
+    letter-spacing:2px;
+}
+
+.logo{
+    font-weight:bold;
+    color:purple;
+    font-size:18px;
+}
+
+.menu a{
+    margin-left:30px;
+    text-decoration:none;
+    color:purple;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+.page-title{
+    text-align:center;
+    font-size:80px;
+    margin:60px 0 20px;
+}
+
+.page-subtitle{
+    text-align:center;
+    font-size:22px;
+    opacity:0.8;
+    margin-bottom:60px;
+}
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 70px;
+    position: relative;
+}
+
+.soft-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(29, 78, 128, 0.10);
+    filter: blur(2px);
+    z-index: -1;
+}
+
+#circle1 {
+    width: 280px;
+    height: 280px;
+    top: 120px;
+    left: -80px;
+}
+
+#circle2 {
+    width: 320px;
+    height: 320px;
+    bottom: 50px;
+    right: 100px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+
+.hero-image img {
+    width: 600px;
+    border-radius: 35px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+
+.hero-text h2 {
+    font-size: 27px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin: 25px 0;
+    line-height: 1.05;
+	font-family: didot;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.hero-text a {
+    display: inline-block;
+    padding: 18px 50px;
+    font-size: 22px;
+    border: 3px solid purple;
+    border-radius: 40px;
+    color: purple;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.hero-text a:hover {
+    background: purple;
+    color: white;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 1000px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="soft-circle" id="circle1"></div>
+<div class="soft-circle" id="circle2"></div>
+
+
+<div class="navbar">
+    <div class="logo">ELYSA'S PAGE <3 </div>
+    <div class="menu">
+        <a href="homepage.html">HOME</a>
+        <a href="biodata.html">BIODATA</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+		<a href="video.html">VIDEO</a>
+    </div>
+</div>
+
+
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="hero-image">
+            <img src="images/elysa.jpg" alt="My Photo">
+        </div>
+
+        <div class="hero-text">
+            <h2>WELCOME TO MY</h2>
+            <h1>WEBSITE ❤️ </h1>
+
+            <p>
+                Hi everyone! I am a student of Information Management at UiTM Kedah.
+                I am a hardworking and responsible person who enjoys learning new things.
+                In my free time, I love listening to music, watching movies, and spending
+                quality time with my family and friends.
+                <br><br>
+                My goal is to achieve success in my career and make my family proud.
+                I believe dedication and a positive attitude lead to success.
+            </p>
+
+            <a href="biodata.html">GET TO KNOW ME MORE</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    This website is developed by Nurul Eyman Elysa Binti Sha'ari (2023891894)
+</footer>
+
+</body>
+</html>
+
